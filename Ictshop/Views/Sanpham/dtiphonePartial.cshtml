@@ -13,7 +13,7 @@
                         <br />
                         @using (Html.BeginForm("ThemGioHang", "GioHang", new { @iMasp = item.Masp, @strURL = Request.Url.ToString() }))
                         {
-                            <input type="submit" value="Mua hàng" id="bgnGioHang" />
+                            <input type="submit" value="Mua hàng" id="bgnGioHang_@item.Masp" />
 
                         }
                         @*<a href="@Url.Action("xemchitiet", new {@Masp=item.Masp })">Xem chi tiết</a>*@
